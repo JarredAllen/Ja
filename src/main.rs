@@ -2,5 +2,8 @@
 extern crate clap;
 
 fn main() {
-    println!("Hello, world!");
+    use clap::App;
+    
+    let yml = load_yaml!("arguments.yml");
+    let m = App::from_yaml(yml).get_matches();
 }

@@ -1,0 +1,19 @@
+name: Ja
+version: "0.1"
+about: Like Yes, but better
+author: Jarred Allen <jarredallen73@gmail.com>
+
+settings:
+    - ArgRequiredElseHelp
+
+args:
+    - DELAY:
+        help: A delay to wait between each output, in seconds (default none)
+        short: d
+        long: delay
+        multiple: false
+        takes_value: true
+    - STRING:
+        help: Text to repeatedly output
+        required: true
+        index: 1
